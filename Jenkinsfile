@@ -2,7 +2,7 @@ pipeline{
 	//agent any
 	agent{
 		docker{
-			image 'maven 3.6.3'
+			image '3.9.9-amazoncorretto-11-debian'
 		}
 	}
 	stages{
