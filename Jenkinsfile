@@ -19,6 +19,21 @@ pipeline{
 		
 
 	}
+		post{
+	     always{
+	            echo "Always running"
+	            }
+	     success{
+		echo "Build successful"
+		}
+               failure{
+		echo  "Build failure"
+		}
+	    changes{
+		echo "change is triggered when a failed build become successful or a successful build fails"
+		}
+		
+}
 	
 }
 
