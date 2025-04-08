@@ -29,7 +29,7 @@ pipeline{
                failure{
 		echo  "Build failure"
 		}
-	    changes{
+	    changed{
 		echo "change is triggered when a failed build become successful or a successful build fails"
 		}
 		
