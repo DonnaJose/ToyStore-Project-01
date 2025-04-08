@@ -8,7 +8,9 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
+				sh 'mvn --version'
 				echo "Build ToyStore Project"
+				echo 'mvn --version'
 			}			
 		}
 		stage('Test'){
