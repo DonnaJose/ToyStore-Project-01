@@ -11,6 +11,12 @@ pipeline{
 	               echo "Test ToyStore Project"
 	           }
 	       }
+		   stage('Integration Test'){
+	           steps{
+	               echo "Integration Test ToyStore Project"
+	           }
+	       }
+		
 
 	}
 	
