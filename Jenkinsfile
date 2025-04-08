@@ -2,10 +2,14 @@ pipeline{
 	agent any
 	stages{
 		stage('Build'){
-			echo "Build ToyStore Project"
+			steps{
+				echo "Build ToyStore Project"
+			}			
 		}
 		stage('Test'){
-			echo "Test ToyStore Project"
+			steps{
+			   echo "Test ToyStore Project"
+			}
 		}
 	}
 	
